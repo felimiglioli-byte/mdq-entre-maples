@@ -16,7 +16,6 @@ h2{font-family:Georgia,serif;font-size:clamp(1.8rem,6vw,2.8rem);margin:.6em 0}
 }
 .hero.activa{display:flex}
 .hero p{font-size:clamp(1rem,3.5vw,1.5rem);max-width:600px}
-.hero p{font-size:clamp(1rem,3.5vw,1.5rem);max-width:600px}
 .logo{display:block;width:130px;height:130px;object-fit:contain;margin:0 auto 8px;}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:12px;background:var(--madera);color:#fff;
  font-weight:700;cursor:pointer;text-decoration:none;padding:12px 22px;font-size:1rem}

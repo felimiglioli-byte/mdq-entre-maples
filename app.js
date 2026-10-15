@@ -8,8 +8,19 @@ function ir(id){
   document.querySelectorAll(".pantalla").forEach(p => p.classList.toggle("activa", p.id === id));
   window.scrollTo(0,0);
 }
-function foto(el, src){ if(!src) return; const i = new Image(); i.onload = () => { el.style.backgroundImage = `url(${src})`; el.textContent = ""; }; i.src = src; }
-
+function foto(el, src) {
+  if (!src) return;
+  const i = new Image();
+  i.onload = () => {
+    el.style.backgroundImage = `url("${src}")`;
+    el.style.backgroundSize = "contain";
+    el.style.backgroundPosition = "center";
+    el.style.backgroundRepeat = "no-repeat";
+    el.textContent = "";
+  };
+  i.onerror = () => console.error("No se pudo cargar la imagen:", src);
+  i.src = src;
+}
 document.querySelectorAll("[data-ir]").forEach(b => b.onclick = () => ir(b.dataset.ir));
 foto($("#foto-blanco"), "Blanco.png");
 foto($("#foto-color"), "Color.jpeg");

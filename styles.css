@@ -115,3 +115,55 @@ background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.35)), url("fondo.jpg") c
     min-height: 140px;
   }
 }
+/* Ajuste visual de la selección de huevos */
+#tipo .tipos {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(220px, 300px)) !important;
+  justify-content: center !important;
+  gap: 24px !important;
+  margin: 30px auto !important;
+}
+
+#tipo .tipo-btn {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 180px !important;
+  padding: 24px !important;
+  border: 2px solid #d8c2a6 !important;
+  border-radius: 20px !important;
+  background: #fff !important;
+  color: #24352d !important;
+  font-size: 1.3rem !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+#tipo .foto {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 90px !important;
+  height: 90px !important;
+  margin: 0 auto 16px !important;
+  border-radius: 50% !important;
+  background: #f5eadc !important;
+  font-size: 2.5rem !important;
+}
+
+#tipo .volver {
+  position: static !important;
+  display: inline-block !important;
+  margin: 0 auto 20px !important;
+  padding: 10px 18px !important;
+  border-radius: 10px !important;
+  background: #fff !important;
+  color: #24352d !important;
+}
+
+@media (max-width: 600px) {
+  #tipo .tipos {
+    grid-template-columns: 1fr !important;
+  }
+}

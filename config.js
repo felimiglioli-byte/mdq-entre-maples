@@ -30,5 +30,9 @@ window.CONFIG = {
 },
 
   // Fotos de las pantallas principales (opcionales)
-  imagenes: { blanco: "img/blanco.jpg", color: "img/color.jpg", fondo: "img/fondo.jpg", logo: "img/logo.jpg" }
-};
+ imagenes: {
+  blanco: "Blanco.png",
+  color: "Color.jpeg",
+  fondo: "fondo.jpg",
+  logo: "logo.jpg"
+}

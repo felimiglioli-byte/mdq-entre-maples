@@ -318,3 +318,38 @@ h2{font-family:Georgia,serif;font-size:clamp(1.8rem,6vw,2.8rem);margin:.6em 0}
   position: relative;
 }
 
+/* Fondo de las pantallas: una sola imagen, sin mosaico */
+#productos.pantalla,
+#tipo.pantalla,
+#confirmar.pantalla {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px;
+  box-sizing: border-box;
+
+  background-image:
+    linear-gradient(rgba(248, 241, 228, 0.25), rgba(248, 241, 228, 0.25)),
+    url("./fondo-huevos-original.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0;
+}
+
+/* Evitar que el fondo se repita */
+body {
+  background-repeat: no-repeat;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+  #productos.pantalla,
+  #tipo.pantalla,
+  #confirmar.pantalla {
+    padding: 16px;
+  }
+}
+

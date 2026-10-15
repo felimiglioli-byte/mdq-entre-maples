@@ -109,7 +109,6 @@ h2{font-family:Georgia,serif;font-size:clamp(1.8rem,6vw,2.8rem);margin:.6em 0}
   background: #f5eadc !important;
   font-size: 3rem !important;
 }
-
 #tipo .volver {
   position: static !important;
   display: inline-block !important;
@@ -200,7 +199,6 @@ h2{font-family:Georgia,serif;font-size:clamp(1.8rem,6vw,2.8rem);margin:.6em 0}
   background: #fff !important;
   color: #24352d !important;
 }
-
 @media (max-width: 600px) {
   #tipo .tipos {
     grid-template-columns: 1fr !important;
@@ -319,3 +317,4 @@ h2{font-family:Georgia,serif;font-size:clamp(1.8rem,6vw,2.8rem);margin:.6em 0}
 #tipo .tipo-btn {
   position: relative;
 }
+

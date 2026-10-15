@@ -12,8 +12,7 @@ window.CONFIG = {
         { id: "b-cajon2", nombre: "Cajón N°2", detalle: "Gastronómicos", precio: 60000, imagen: "Cajon n2.png" }
       ]
     },
-
-    color: {
+       color: {
       titulo: "Huevos de color",
       etiqueta: "de color",
       productos: [
@@ -23,7 +22,6 @@ window.CONFIG = {
       ]
     }
   },
-
   imagenes: {
     blanco: "Blanco.png",
     color: "Color.jpeg",

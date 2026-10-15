@@ -33,3 +33,10 @@ background: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.45)), url(logo.jpg) cent
 .qty button{width:36px;height:36px;border-radius:50%;border:1px solid var(--verde);background:#fff;font-size:1.3rem;cursor:pointer}
 .aviso{color:#b3261e;font-weight:600}.nota{font-size:.85rem;color:#666;text-align:center}
 @media(max-width:520px){.tipos{gap:10px}.btn.grande{padding:16px 24px}}
+ #inicio .logo {
+display: block !important;
+width: 160px !important;
+height: 160px !important;
+object-fit: contain !important;
+margin: 0 auto 16px !important;
+}

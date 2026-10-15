@@ -21,18 +21,24 @@ function foto(el, src) {
   i.onerror = () => console.error("No se pudo cargar la imagen:", src);
   i.src = src;
 }
-document.querySelectorAll("[data-ir]").forEach(b => b.onclick = () => ir(b.dataset.ir));
-document.addEventListener("click", function(e) {
-  const boton = e.target.closest("[data-tipo]");
-  if (!boton) return;
-
-  const tipoElegido = boton.dataset.tipo;
-  if (C.tipos[tipoElegido]) {
-    mostrarProductos(tipoElegido);
-  }
+document.querySelectorAll("[data-ir]").forEach(b => {
+  b.addEventListener("click", () => ir(b.dataset.ir));
 });
-$("#volver-prod").onclick = () => ir("productos");
 
+document.querySelectorAll("[data-tipo]").forEach(b => {
+  b.addEventListener("click", () => {
+    const tipoElegido = b.getAttribute("data-tipo");
+    console.log("Tipo seleccionado:", tipoElegido);
+
+    if (C && C.tipos && C.tipos[tipoElegido]) {
+      mostrarProductos(tipoElegido);
+    } else {
+      console.error("Tipo no encontrado en CONFIG:", tipoElegido);
+    }
+  });
+});
+
+$("#volver-prod").onclick = () => ir("productos");
 function mostrarProductos(t){
   tipo = t; const cfg = C.tipos[t];
   $("#prod-titulo").textContent = cfg.titulo;

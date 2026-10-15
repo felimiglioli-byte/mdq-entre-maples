@@ -259,3 +259,45 @@ h2{font-family:Georgia,serif;font-size:clamp(1.8rem,6vw,2.8rem);margin:.6em 0}
     grid-template-columns: 1fr !important;
   }
 }
+/* Corrección final de las tarjetas BLANCO y COLOR */
+#tipo .tipos {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(220px, 300px)) !important;
+  justify-content: center !important;
+  gap: 24px !important;
+  margin: 30px auto !important;
+}
+
+#tipo .tipo-btn {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 180px !important;
+  padding: 24px !important;
+  border: 2px solid #d8c2a6 !important;
+  border-radius: 20px !important;
+  background: #fff !important;
+  color: #24352d !important;
+  font-size: 1.3rem !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+#tipo .foto {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 90px !important;
+  height: 90px !important;
+  margin: 0 auto 16px !important;
+  border-radius: 50% !important;
+  background: #f5eadc !important;
+  font-size: 2.5rem !important;
+}
+
+@media (max-width: 600px) {
+  #tipo .tipos {
+    grid-template-columns: 1fr !important;
+  }
+}

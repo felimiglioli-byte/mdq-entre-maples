@@ -40,9 +40,9 @@ background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.35)), url("fondo.jpg") c
   object-fit: contain !important;
   margin: 0 auto 16px !important;
 }
-      /* Mejorar la pantalla de selección de huevos */
+/* Diseño de la pantalla para elegir el tipo de huevo */
 #tipo {
-  background: #f6f1e8;
+  background: linear-gradient(135deg, #fffaf0, #f0e3cf);
   color: #24352d;
   min-height: 100vh;
   padding: 40px 24px;
@@ -61,25 +61,25 @@ background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.35)), url("fondo.jpg") c
   grid-template-columns: repeat(2, minmax(220px, 300px));
   justify-content: center;
   gap: 24px;
-  margin: 35px auto;
+  margin: 30px auto;
 }
 
 #tipo .tipo-btn {
   min-height: 180px;
-  border: 2px solid #e2d2bb;
+  border: 2px solid #d8c2a6;
   border-radius: 20px;
-  background: #fffdf8;
+  background: #ffffff;
   color: #24352d;
   padding: 24px;
   cursor: pointer;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  font-size: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-size: 1.3rem;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 #tipo .tipo-btn:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
 }
 
 #tipo .foto {
@@ -90,18 +90,18 @@ background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.35)), url("fondo.jpg") c
   height: 90px;
   margin: 0 auto 16px;
   border-radius: 50%;
-  background: #f1e5d2;
+  background: #f5eadc;
   font-size: 2.5rem;
 }
 
 #tipo .volver {
   position: static;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   padding: 10px 18px;
-  border: 1px solid #d9c7ad;
+  border: 1px solid #d8c2a6;
   border-radius: 10px;
-  background: #fffdf8;
+  background: #ffffff;
   color: #24352d;
   cursor: pointer;
 }

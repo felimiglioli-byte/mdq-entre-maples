@@ -301,18 +301,18 @@ h2{font-family:Georgia,serif;font-size:clamp(1.8rem,6vw,2.8rem);margin:.6em 0}
     grid-template-columns: 1fr !important;
   }
 }
-
-/* Fondo de huevos en las pantallas de productos, tipo y confirmación */
+/* Fondo fotográfico en las pantallas interiores */
 #productos,
 #tipo,
 #confirmar {
-  background:
-    linear-gradient(rgba(248, 241, 228, 0.72), rgba(248, 241, 228, 0.72)),
-    url("fondo-huevos-original.png") center center / cover no-repeat;
-  background-attachment: scroll;
-  border-radius: 18px;
+  background-image:
+    linear-gradient(rgba(248, 241, 228, 0.30), rgba(248, 241, 228, 0.30)),
+    url("./fondo-huevos-original.png") !important;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
-
 /* Mantener legibles las tarjetas y el pedido */
 #productos .card,
 #confirmar .resumen,

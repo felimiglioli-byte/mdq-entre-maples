@@ -203,3 +203,52 @@ background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.35)), url("fondo.jpg") c
     min-height: 140px !important;
   }
 }
+
+/* Corrección de la pantalla de selección */
+#tipo.pantalla.activa {
+  display: block !important;
+  min-height: 100vh;
+  max-width: none;
+  width: 100%;
+  padding: 40px 24px;
+  background: linear-gradient(135deg, #fffaf0, #f0e3cf);
+  color: #24352d;
+  text-align: center;
+}
+
+#tipo .tipos {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(220px, 300px)) !important;
+  justify-content: center !important;
+  gap: 24px !important;
+  margin: 30px auto !important;
+}
+
+#tipo .tipo-btn {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 180px !important;
+  border: 2px solid #d8c2a6 !important;
+  border-radius: 20px !important;
+  background: #fff !important;
+  color: #24352d !important;
+  padding: 24px !important;
+  font-size: 1.3rem !important;
+}
+
+#tipo .foto {
+  width: 90px !important;
+  height: 90px !important;
+  margin: 0 auto 16px !important;
+  border-radius: 50% !important;
+  background: #f5eadc !important;
+  font-size: 2.5rem !important;
+}
+
+@media (max-width: 600px) {
+  #tipo .tipos {
+    grid-template-columns: 1fr !important;
+  }
+}

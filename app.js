@@ -11,7 +11,8 @@ function ir(id){
 function foto(el, src){ if(!src) return; const i = new Image(); i.onload = () => { el.style.backgroundImage = `url(${src})`; el.textContent = ""; }; i.src = src; }
 
 document.querySelectorAll("[data-ir]").forEach(b => b.onclick = () => ir(b.dataset.ir));
-foto($("#foto-blanco"), C.imagenes.blanco); foto($("#foto-color"), C.imagenes.color);
+foto($("#foto-blanco"), "Blanco.png");
+foto($("#foto-color"), "Color.jpeg");
 document.querySelectorAll("[data-tipo]").forEach(b => b.onclick = () => mostrarProductos(b.dataset.tipo));
 $("#volver-prod").onclick = () => ir("productos");
 

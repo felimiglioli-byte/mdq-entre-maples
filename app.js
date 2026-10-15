@@ -22,7 +22,15 @@ function foto(el, src) {
   i.src = src;
 }
 document.querySelectorAll("[data-ir]").forEach(b => b.onclick = () => ir(b.dataset.ir));
-document.querySelectorAll("[data-tipo]").forEach(b => b.onclick = () => mostrarProductos(b.dataset.tipo));
+document.addEventListener("click", function(e) {
+  const boton = e.target.closest("[data-tipo]");
+  if (!boton) return;
+
+  const tipoElegido = boton.dataset.tipo;
+  if (C.tipos[tipoElegido]) {
+    mostrarProductos(tipoElegido);
+  }
+});
 $("#volver-prod").onclick = () => ir("productos");
 
 function mostrarProductos(t){

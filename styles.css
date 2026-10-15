@@ -353,3 +353,19 @@ body {
   }
 }
 
+/* Corrección definitiva del fondo de la pantalla de selección */
+#tipo.pantalla,
+#tipo.pantalla.activa {
+  width: 100% !important;
+  max-width: none !important;
+  min-height: 100vh !important;
+  margin: 0 !important;
+  background-image:
+    linear-gradient(rgba(248, 241, 228, 0.20), rgba(248, 241, 228, 0.20)),
+    url("./fondo-huevos-original.png") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+}
+

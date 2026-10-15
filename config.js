@@ -23,9 +23,9 @@ window.CONFIG = {
       titulo: "Huevos de color",
       etiqueta: "de color",
       productos: [
-        { id: "c-maple1",  nombre: "Maple N°1",              detalle: "Ideal Familias",      precio: 6500, imagen: "img/maple-color.jpg" },
-        { id: "c-medio1",  nombre: "Medio Cajón N°1",        detalle: "Intermedios",         precio: 35000, imagen: "img/medio-color.jpg" },
-        { id: "c-cajon1",  nombre: "Cajón N°1 (12 maples)",  detalle: "Ideal Comercios",     precio: 70000, imagen: "img/cajon1-color.jpg" }
+    { id: "c-maple1", nombre: "Maple N°1", detalle: "Ideal Familias", precio: 6500, imagen: "Maple-marron.jpg" },
+    { id: "c-medio1", nombre: "Medio Cajón N°1", detalle: "Intermedios", precio: 35000, imagen: "medio-cajon-de-color.jpg" },
+    { id: "c-cajon1", nombre: "Cajón N°1 (12 maples)", detalle: "Ideal Comercios", precio: 70000, imagen: "Cajon-de-color-n1.jpg" },
       ]
     }
   },

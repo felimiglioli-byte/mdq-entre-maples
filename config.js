@@ -14,7 +14,7 @@ window.CONFIG = {
       etiqueta: "blancos", // se usa en el mensaje de WhatsApp
       productos: [
         { id: "b-maple1",  nombre: "Maple N°1",              detalle: "Ideal Familias",      precio: 6000, imagen: "Maple-N1.jpg" },
-        { id: "b-medio1",  nombre: "Medio Cajón N°1",        detalle: "Intermedios",         precio: 32500, imagen: "img/medio-blanco.jpg" },
+        { id: "b-medio1",  nombre: "Medio Cajón N°1",        detalle: "Intermedios",         precio: 32500, imagen: "Medio-cajon-n1.jpg" },
         { id: "b-cajon1",  nombre: "Cajón N°1 (12 maples)",  detalle: "Ideal Comercios",     precio: 65000, imagen: "img/cajon1-blanco.jpg" },
         { id: "b-cajon2",  nombre: "Cajón N°2",              detalle: "Gastronómicos",       precio: 60000, imagen: "img/cajon2-blanco.jpg" }
       ]

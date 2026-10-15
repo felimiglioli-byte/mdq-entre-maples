@@ -37,7 +37,6 @@ document.querySelectorAll("[data-tipo]").forEach(b => {
     }
   });
 });
-
 $("#volver-prod").onclick = () => ir("productos");
 function mostrarProductos(t){
   tipo = t; const cfg = C.tipos[t];

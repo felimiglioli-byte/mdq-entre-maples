@@ -67,7 +67,7 @@ function render(){
   if (!ok){ wa.classList.add("off"); wa.removeAttribute("href"); return; }
   wa.classList.remove("off");
   const quiero = cant === 1 ? `el ${prod.nombre}` : `${cant} unidades de ${prod.nombre}`;
-  const msg = `Hola, te quiero comprar ${quiero} de huevos ${cfg.etiqueta}.\n\nPrecio final: ${fmt(total)}.\n\n¿Me confirmás la disponibilidad y me pasás los datos para coordinar la entrega?`;
+  const msg = `Hola, te quiero comprar ${quiero} de huevos ${cfg.etiqueta}.\n\nPrecio final: ${fmt(total)}.\n\nEnviar datos: fecha, hora y dirección para confirmar la entrega.`;
   wa.href = `https://wa.me/${C.whatsappNumber}?text=${encodeURIComponent(msg)}`;
 }
 $("#mas").onclick = () => { if (cant < 999){ cant++; render(); } };
